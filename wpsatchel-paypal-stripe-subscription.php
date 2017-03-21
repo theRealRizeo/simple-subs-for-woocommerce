@@ -172,7 +172,6 @@ class Subscription {
 		$path  = $this->plugin_path . $parts . '.php';
 		$path = str_replace(ABSPATH,'',$path);
 		$path  = str_replace( '_', '-', $path );
-$path = ABSPATH.$path;
 		if ( is_file( $path ) ) {
 			include_once $path;
 		}
